@@ -11,6 +11,10 @@ function App() {
   const [awayTd, scoreAwayTd] = useState(0)
   const [awayFg, scoreAwayFg] = useState(0)
   console.log('awayScore', awayTd + awayFg)
+  // setInterval((time)=>{
+  //   console.log('isTriggered?00')
+  //   console.log('isTriggered?', time)
+  // }, 1000)
   return (
     <div className="container">
       <section className="scoreboard">
@@ -20,7 +24,7 @@ function App() {
 
             {/* TODO STEP 3 - We need to change the hardcoded values in these divs to accept dynamic values from our state. */}
 
-            <div className="home__score">{homeTd + homeFg}</div>
+            <div className="home__score">{homeFg + homeTd}</div>
           </div>
           <div className="timer">00:00</div>
           <div className="away">
